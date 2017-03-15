@@ -1,0 +1,6 @@
+framework module Pods_AwsSnsTestTests {
+  umbrella header "Pods-AwsSnsTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

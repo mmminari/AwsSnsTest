@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EE32340D62546878CE12C1F /* Pods_AwsSnsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A13EBD89E7BA09994B4033 /* Pods_AwsSnsTest.framework */; };
+		6DF4D1961E793F5900F82861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4D1951E793F5900F82861 /* main.m */; };
+		6DF4D1991E793F5900F82861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4D1981E793F5900F82861 /* AppDelegate.m */; };
+		6DF4D19C1E793F5900F82861 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4D19B1E793F5900F82861 /* ViewController.m */; };
+		6DF4D19F1E793F5900F82861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF4D19D1E793F5900F82861 /* Main.storyboard */; };
+		6DF4D1A11E793F5900F82861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF4D1A01E793F5900F82861 /* Assets.xcassets */; };
+		6DF4D1A41E793F5900F82861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF4D1A21E793F5900F82861 /* LaunchScreen.storyboard */; };
+		6DF4D1AF1E793F5900F82861 /* AwsSnsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4D1AE1E793F5900F82861 /* AwsSnsTestTests.m */; };
+		A8CD03939FD0E6C24AA51C96 /* Pods_AwsSnsTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C9F3655C717595D425080 /* Pods_AwsSnsTestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DF4D1AB1E793F5900F82861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DF4D1891E793F5900F82861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DF4D1901E793F5900F82861;
+			remoteInfo = AwsSnsTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F99416C10A42A59DBA6838F /* Pods-AwsSnsTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwsSnsTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwsSnsTestTests/Pods-AwsSnsTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		469C9F3655C717595D425080 /* Pods_AwsSnsTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwsSnsTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B8BCDD0BD24DC6E3BB2A10 /* Pods-AwsSnsTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwsSnsTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwsSnsTestTests/Pods-AwsSnsTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DF4D1911E793F5900F82861 /* AwsSnsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwsSnsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF4D1951E793F5900F82861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DF4D1971E793F5900F82861 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6DF4D1981E793F5900F82861 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6DF4D19A1E793F5900F82861 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6DF4D19B1E793F5900F82861 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6DF4D19E1E793F5900F82861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DF4D1A01E793F5900F82861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DF4D1A31E793F5900F82861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DF4D1A51E793F5900F82861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF4D1AA1E793F5900F82861 /* AwsSnsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwsSnsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF4D1AE1E793F5900F82861 /* AwsSnsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwsSnsTestTests.m; sourceTree = "<group>"; };
+		6DF4D1B01E793F5900F82861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FEBC016F2A7C3118A7570F8 /* Pods-AwsSnsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwsSnsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwsSnsTest/Pods-AwsSnsTest.release.xcconfig"; sourceTree = "<group>"; };
+		A277D56446FCBAFE3B3049E7 /* Pods-AwsSnsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwsSnsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwsSnsTest/Pods-AwsSnsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E9A13EBD89E7BA09994B4033 /* Pods_AwsSnsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwsSnsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DF4D18E1E793F5900F82861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE32340D62546878CE12C1F /* Pods_AwsSnsTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF4D1A71E793F5900F82861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CD03939FD0E6C24AA51C96 /* Pods_AwsSnsTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1145C7255E1B117F3406F486 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9A13EBD89E7BA09994B4033 /* Pods_AwsSnsTest.framework */,
+				469C9F3655C717595D425080 /* Pods_AwsSnsTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DF4D1881E793F5900F82861 = {
+			isa = PBXGroup;
+			children = (
+				6DF4D1931E793F5900F82861 /* AwsSnsTest */,
+				6DF4D1AD1E793F5900F82861 /* AwsSnsTestTests */,
+				6DF4D1921E793F5900F82861 /* Products */,
+				CFE6CCFCDCD1AC2125D38783 /* Pods */,
+				1145C7255E1B117F3406F486 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DF4D1921E793F5900F82861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DF4D1911E793F5900F82861 /* AwsSnsTest.app */,
+				6DF4D1AA1E793F5900F82861 /* AwsSnsTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DF4D1931E793F5900F82861 /* AwsSnsTest */ = {
+			isa = PBXGroup;
+			children = (
+				6DF4D1971E793F5900F82861 /* AppDelegate.h */,
+				6DF4D1981E793F5900F82861 /* AppDelegate.m */,
+				6DF4D19A1E793F5900F82861 /* ViewController.h */,
+				6DF4D19B1E793F5900F82861 /* ViewController.m */,
+				6DF4D19D1E793F5900F82861 /* Main.storyboard */,
+				6DF4D1A01E793F5900F82861 /* Assets.xcassets */,
+				6DF4D1A21E793F5900F82861 /* LaunchScreen.storyboard */,
+				6DF4D1A51E793F5900F82861 /* Info.plist */,
+				6DF4D1941E793F5900F82861 /* Supporting Files */,
+			);
+			path = AwsSnsTest;
+			sourceTree = "<group>";
+		};
+		6DF4D1941E793F5900F82861 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DF4D1951E793F5900F82861 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DF4D1AD1E793F5900F82861 /* AwsSnsTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DF4D1AE1E793F5900F82861 /* AwsSnsTestTests.m */,
+				6DF4D1B01E793F5900F82861 /* Info.plist */,
+			);
+			path = AwsSnsTestTests;
+			sourceTree = "<group>";
+		};
+		CFE6CCFCDCD1AC2125D38783 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A277D56446FCBAFE3B3049E7 /* Pods-AwsSnsTest.debug.xcconfig */,
+				7FEBC016F2A7C3118A7570F8 /* Pods-AwsSnsTest.release.xcconfig */,
+				1F99416C10A42A59DBA6838F /* Pods-AwsSnsTestTests.debug.xcconfig */,
+				52B8BCDD0BD24DC6E3BB2A10 /* Pods-AwsSnsTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DF4D1901E793F5900F82861 /* AwsSnsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF4D1B31E793F5900F82861 /* Build configuration list for PBXNativeTarget "AwsSnsTest" */;
+			buildPhases = (
+				991437B081F9DDD59277781A /* [CP] Check Pods Manifest.lock */,
+				6DF4D18D1E793F5900F82861 /* Sources */,
+				6DF4D18E1E793F5900F82861 /* Frameworks */,
+				6DF4D18F1E793F5900F82861 /* Resources */,
+				D647794F17E7AA75D5C3FA60 /* [CP] Embed Pods Frameworks */,
+				894E36D3B491197EC6454A75 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwsSnsTest;
+			productName = AwsSnsTest;
+			productReference = 6DF4D1911E793F5900F82861 /* AwsSnsTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DF4D1A91E793F5900F82861 /* AwsSnsTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF4D1B61E793F5900F82861 /* Build configuration list for PBXNativeTarget "AwsSnsTestTests" */;
+			buildPhases = (
+				7272879D28C0577970234F5E /* [CP] Check Pods Manifest.lock */,
+				6DF4D1A61E793F5900F82861 /* Sources */,
+				6DF4D1A71E793F5900F82861 /* Frameworks */,
+				6DF4D1A81E793F5900F82861 /* Resources */,
+				8AF5D40361FC453CC1FAFB22 /* [CP] Embed Pods Frameworks */,
+				707B7A27A0F2EF4CF2787D0D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DF4D1AC1E793F5900F82861 /* PBXTargetDependency */,
+			);
+			name = AwsSnsTestTests;
+			productName = AwsSnsTestTests;
+			productReference = 6DF4D1AA1E793F5900F82861 /* AwsSnsTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DF4D1891E793F5900F82861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "김민아";
+				TargetAttributes = {
+					6DF4D1901E793F5900F82861 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A87J69XM38;
+						ProvisioningStyle = Automatic;
+					};
+					6DF4D1A91E793F5900F82861 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6DF4D1901E793F5900F82861;
+					};
+				};
+			};
+			buildConfigurationList = 6DF4D18C1E793F5900F82861 /* Build configuration list for PBXProject "AwsSnsTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DF4D1881E793F5900F82861;
+			productRefGroup = 6DF4D1921E793F5900F82861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DF4D1901E793F5900F82861 /* AwsSnsTest */,
+				6DF4D1A91E793F5900F82861 /* AwsSnsTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DF4D18F1E793F5900F82861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF4D1A41E793F5900F82861 /* LaunchScreen.storyboard in Resources */,
+				6DF4D1A11E793F5900F82861 /* Assets.xcassets in Resources */,
+				6DF4D19F1E793F5900F82861 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF4D1A81E793F5900F82861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		707B7A27A0F2EF4CF2787D0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AwsSnsTestTests/Pods-AwsSnsTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7272879D28C0577970234F5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		894E36D3B491197EC6454A75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AwsSnsTest/Pods-AwsSnsTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AF5D40361FC453CC1FAFB22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AwsSnsTestTests/Pods-AwsSnsTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		991437B081F9DDD59277781A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D647794F17E7AA75D5C3FA60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AwsSnsTest/Pods-AwsSnsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DF4D18D1E793F5900F82861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF4D19C1E793F5900F82861 /* ViewController.m in Sources */,
+				6DF4D1991E793F5900F82861 /* AppDelegate.m in Sources */,
+				6DF4D1961E793F5900F82861 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF4D1A61E793F5900F82861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF4D1AF1E793F5900F82861 /* AwsSnsTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DF4D1AC1E793F5900F82861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DF4D1901E793F5900F82861 /* AwsSnsTest */;
+			targetProxy = 6DF4D1AB1E793F5900F82861 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DF4D19D1E793F5900F82861 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DF4D19E1E793F5900F82861 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DF4D1A21E793F5900F82861 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DF4D1A31E793F5900F82861 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DF4D1B11E793F5900F82861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DF4D1B21E793F5900F82861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DF4D1B41E793F5900F82861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A277D56446FCBAFE3B3049E7 /* Pods-AwsSnsTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87J69XM38;
+				INFOPLIST_FILE = AwsSnsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.AwsSnsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6DF4D1B51E793F5900F82861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FEBC016F2A7C3118A7570F8 /* Pods-AwsSnsTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87J69XM38;
+				INFOPLIST_FILE = AwsSnsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.AwsSnsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6DF4D1B71E793F5900F82861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F99416C10A42A59DBA6838F /* Pods-AwsSnsTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AwsSnsTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.AwsSnsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwsSnsTest.app/AwsSnsTest";
+			};
+			name = Debug;
+		};
+		6DF4D1B81E793F5900F82861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B8BCDD0BD24DC6E3BB2A10 /* Pods-AwsSnsTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AwsSnsTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.AwsSnsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwsSnsTest.app/AwsSnsTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DF4D18C1E793F5900F82861 /* Build configuration list for PBXProject "AwsSnsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF4D1B11E793F5900F82861 /* Debug */,
+				6DF4D1B21E793F5900F82861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF4D1B31E793F5900F82861 /* Build configuration list for PBXNativeTarget "AwsSnsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF4D1B41E793F5900F82861 /* Debug */,
+				6DF4D1B51E793F5900F82861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DF4D1B61E793F5900F82861 /* Build configuration list for PBXNativeTarget "AwsSnsTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF4D1B71E793F5900F82861 /* Debug */,
+				6DF4D1B81E793F5900F82861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DF4D1891E793F5900F82861 /* Project object */;
+}
