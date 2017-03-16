@@ -26,6 +26,9 @@
     self.lib = [LibraryClass sharedInstance];
     
 }
+
+// 토큰 정보가 view가 뜨고 넘어옴
+// 버튼을 눌러 토큰정보 화면에 출력
 - (IBAction)touchedShowDeviceToken:(UIButton *)sender
 {
     self.textView.text = self.lib.getDeviceToken;

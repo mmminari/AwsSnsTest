@@ -28,8 +28,10 @@
     
     self.lib = [LibraryClass sharedInstance];
     
+    // OneSignal을 사용하기 위해 OneSignal에 launchOptions 등록
     [self.lib registerDeviceTokenWithLaunchOptions:launchOptions];
     
+    // 노티피케이션 사용을 위한 등록 -> 토큰 정보 요청
     [[UIApplication sharedApplication] registerForRemoteNotifications];
     
     return YES;
@@ -40,6 +42,7 @@
     //device token값 넘기기
     NSLog( @"data : %@" , deviceToken);
     
+    // 토큰 정보 string으로 변환해서 저장
     [self.lib saveDeviceToken:deviceToken];
     
 }
