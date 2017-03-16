@@ -7,19 +7,42 @@
 //
 
 #import "AppDelegate.h"
+#import "LibraryClass.h"
 
 @interface AppDelegate ()
+
+@property (weak, nonatomic) LibraryClass *lib;
 
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    
+    UIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+    
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    
+    self.lib = [LibraryClass sharedInstance];
+    
+    [self.lib registerDeviceTokenWithLaunchOptions:launchOptions];
+    
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    
     return YES;
 }
 
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    //device token값 넘기기
+    NSLog( @"data : %@" , deviceToken);
+    
+    [self.lib saveDeviceToken:deviceToken];
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

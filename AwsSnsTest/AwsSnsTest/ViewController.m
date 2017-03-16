@@ -7,23 +7,28 @@
 //
 
 #import "ViewController.h"
+#import "LibraryClass.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
+@property (weak, nonatomic) LibraryClass *lib;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.lib = [LibraryClass sharedInstance];
+    
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)touchedShowDeviceToken:(UIButton *)sender
+{
+    self.textView.text = self.lib.getDeviceToken;
 }
-
 
 @end
